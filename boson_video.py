@@ -11,7 +11,7 @@ vid.set(cv2.CAP_PROP_CONVERT_RGB, False)
 while vid.isOpened():
     empty, frame = vid.read()
 
-    cv2.imshow("s", frame)
+    cv2.imshow("Thermal Frame", frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
