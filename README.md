@@ -20,6 +20,9 @@ sudo apt-get install python3 python3-pip
 ```sh
 sudo apt-get install python-opencv
 pip3 install -r requirements.txt
+
+# Update pip to get lastest dependency fixes
+pip3 install --upgrade pip
 ```
 Ensure that the dependencies installed properly
 ```sh
@@ -29,7 +32,7 @@ python3
 >> import cv
 >> import numpy
 ```
-if you did not get errors, the packages were installed properly
+If you did not get errors, the packages were installed properly. Note: while numpy is not explicitly used in the script it is a requirement for `python-opencv`.
 ### Grant Executes Permission
 ```sh
 chmod +x boson_video.py
